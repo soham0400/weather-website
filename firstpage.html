@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="videos/default.mp4" type="video/mp4">
+    </video>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="images/binoculars-fill.svg"></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <p class="description">Light Rain</p>
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Mumbai</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">15 km/hr</p>
+                        <p>Wind Speed</p>
+                    </div> 
+                </div>
+                <div class="col">
+                    <img src="images/visibility.png">
+                    <div>
+                        <p class="visibility">10 km</p>
+                        <p>Visibility</p>
+                    </div> 
+                </div>
+                <div class="col">
+                    <img src="images/pressure.png">
+                    <div>
+                        <p class="pressure">1013 hPa</p>
+                        <p>Pressure</p>
+                    </div> 
+                </div>
+                <div class="col">
+                    <img src="images/sunrise.png">
+                    <div>
+                        <p class="sunrise">06:30 AM</p>
+                        <p>Sunrise</p>
+                    </div> 
+                </div>
+                <div class="col">
+                    <img src="images/sunset.png">
+                    <div>
+                        <p class="sunset">06:45 PM</p>
+                        <p>Sunset</p>
+                    </div> 
+                </div>
+            </div>
+            <button class="more-details-btn">More Details</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
